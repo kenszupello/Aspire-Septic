@@ -1,50 +1,57 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f8fb;
-    color: #333;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f1ede5;
+  color: #3b3b3b;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
 }
-header {
-    background: #1f3a93;
-    color: white;
-    padding: 2rem;
-    text-align: center;
+.container {
+  max-width: 700px;
+  padding: 40px 20px;
+  background-color: #f1ede5;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
 }
-.form-section {
-    max-width: 600px;
-    margin: 2rem auto;
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.avatar {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+h1 {
+  margin-top: 0;
+  font-size: 2em;
+}
+p {
+  margin-bottom: 30px;
+  font-size: 1.1em;
 }
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-input, select, textarea {
-    margin-bottom: 1rem;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
+input, select, textarea, button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
 }
 button {
-    background: #1f3a93;
-    color: white;
-    border: none;
-    padding: 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
+  background-color: #8b5e3c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
 }
 button:hover {
-    background: #16327a;
-}
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #eee;
-    margin-top: 2rem;
+  background-color: #734d2f;
 }
