@@ -1,38 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspire Septic Solutions</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aspire Septic Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #f1ede5;
+      color: #3b3b3b;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 700px;
+      padding: 40px 20px;
+      background-color: #f1ede5;
+      border-radius: 8px;
+      text-align: center;
+      position: relative;
+    }
+    .avatar {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2em;
+    }
+    p {
+      margin-bottom: 30px;
+      font-size: 1.1em;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    input, select, textarea, button {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #8b5e3c;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #734d2f;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Aspire Septic Solutions</h1>
-        <p>Raising the standard in septic — fast, professional, and always free to request service.</p>
-    </header>
-    <section class="form-section">
-        <h2>Request a Septic Pro</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="tel" name="phone" placeholder="Your Phone Number" required>
-            <input type="text" name="zip" placeholder="Zip Code" required>
-            <select name="service" required>
-                <option value="">What do you need?</option>
-                <option value="pumping">Tank Pumping</option>
-                <option value="inspection">Inspection</option>
-                <option value="backup">Backup Issue</option>
-                <option value="install">New Install</option>
-                <option value="other">Other</option>
-            </select>
-            <input type="text" name="date_needed" placeholder="When do you need service?">
-            <textarea name="notes" placeholder="Additional details (optional)"></textarea>
-            <button type="submit">Request Service — Free</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2025 Aspire Septic Solutions. All rights reserved.</p>
-    </footer>
+  <div class="container">
+    <img src="avatar.png" alt="Avatar" class="avatar" />
+    <h1>Need a Reliable Septic Pro?</h1>
+    <p>We’ve already done the vetting. Our partners are dependable, responsive, and grateful for your business. Get the job done right, without the hassle.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <select required>
+        <option value="">Select a Service</option>
+        <option>Septic Pumping</option>
+        <option>Inspection</option>
+        <option>Repair</option>
+        <option>New Install</option>
+        <option>Other</option>
+      </select>
+      <input type="date" required />
+      <textarea placeholder="Brief description of the issue or service needed" rows="4"></textarea>
+      <button type="submit">Request Service</button>
+    </form>
+  </div>
 </body>
 </html>
