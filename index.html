@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspire Septic Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Aspire Septic Solutions</h1>
+        <p>Raising the standard in septic — fast, professional, and always free to request service.</p>
+    </header>
+    <section class="form-section">
+        <h2>Request a Septic Pro</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <input type="text" name="zip" placeholder="Zip Code" required>
+            <select name="service" required>
+                <option value="">What do you need?</option>
+                <option value="pumping">Tank Pumping</option>
+                <option value="inspection">Inspection</option>
+                <option value="backup">Backup Issue</option>
+                <option value="install">New Install</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="text" name="date_needed" placeholder="When do you need service?">
+            <textarea name="notes" placeholder="Additional details (optional)"></textarea>
+            <button type="submit">Request Service — Free</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Aspire Septic Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
