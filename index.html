@@ -69,23 +69,27 @@
 </head>
 <body>
   <div class="container">
-    <A_flat-style_digital_illustration_features_a_heads.png>
+    <img src="avatar.png" alt="Avatar" class="avatar" />
     <h1>Need a Reliable Septic Pro?</h1>
     <p>We’ve already done the vetting. Our partners are dependable, responsive, and grateful for your business. Get the job done right, without the hassle.</p>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="tel" placeholder="Phone Number" required />
-      <select required>
+    
+    <form action="https://formspree.io/f/xldnabka" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      
+      <select name="service" required>
         <option value="">Select a Service</option>
-        <option>Septic Pumping</option>
-        <option>Inspection</option>
-        <option>Repair</option>
-        <option>New Install</option>
-        <option>Other</option>
+        <option value="Septic Pumping">Septic Pumping</option>
+        <option value="Inspection">Inspection</option>
+        <option value="Repair">Repair</option>
+        <option value="New Install">New Install</option>
+        <option value="Other">Other</option>
       </select>
-      <input type="date" required />
-      <textarea placeholder="Brief description of the issue or service needed" rows="4"></textarea>
+
+      <input type="date" name="date" required />
+      <textarea name="description" placeholder="Brief description of the issue or service needed" rows="4"></textarea>
+      
       <button type="submit">Request Service</button>
     </form>
   </div>
